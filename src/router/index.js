@@ -10,8 +10,16 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    
-    component: () => import( '../views/AboutView.vue')
+    component: HomeView,
+    beforeEnter(to, from, next) {
+      // Scroll to the target section
+      const targetElement = document.getElementById('aboutSection');
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+      
+      next(); // Proceed with the route navigation
+    }
   },
   {
     path: '/skills',
