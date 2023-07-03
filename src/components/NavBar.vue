@@ -23,11 +23,9 @@
               <router-link to="/about" >About</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/skills">Skills</router-link>
+              <router-link to="/resume">Resume</router-link>
             </li>
-            <li class="nav-item">
-              <router-link to="/eduexp">EducExperience</router-link>
-            </li>
+          
             <li class="nav-item">
               <router-link to="/project">Projects</router-link>
             </li>

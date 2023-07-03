@@ -10,26 +10,12 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    component: HomeView,
-    beforeEnter(to, from, next) {
-      // Scroll to the target section
-      const targetElement = document.getElementById('aboutSection');
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-      
-      next(); // Proceed with the route navigation
-    }
+   component: () => ('../views/AboutView.vue')
   },
   {
-    path: '/skills',
-    name: 'skills',
-    component: () => import('../views/SkillsView.vue')
-  },
-  {
-    path: '/eduexp',
-    name: 'eduexp',
-    component: () => import ('../views/EduexpView.vue')
+    path: '/resume',
+    name: 'resume',
+    component: () => import('../views/ResumeView.vue')
   },
   {
     path: '/project',

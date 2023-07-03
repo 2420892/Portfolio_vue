@@ -14,7 +14,7 @@ export default createStore({
       state.skills = skills;
     },
     setEducation(state, value) {
-      state.Educationn = value;
+      state.Education = value;
     },
     setWork(state, value) {
       state.work = value;
