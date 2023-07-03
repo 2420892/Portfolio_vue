@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-4 mb-4" v-for="project in projects" :key="project.id">
         <div class="card">
-          <img :src="project.image" class="card-img-top img-fluid"  :alt="project.name" style="height:200px;">
+          <img :src="project.image" class="card-img-top img-fluid"  :alt="project.name" style="height:200px; width:18rem">
           <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
             <a :href="project.github" class="card-link">View Code</a>
@@ -32,6 +32,16 @@
   }
   </script>
   <style scoped>
-  
+  .card{
+    background-image: url();
+      padding: 50px;
+      transition: transform .2s; /* Animation */
+      margin: 0 auto;
+    
+    
+  }
+  .card:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
   </style>
   

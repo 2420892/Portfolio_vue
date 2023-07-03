@@ -1,37 +1,37 @@
 <template>
-  <div id="Testimons" class="container">
-    <h1>Testimonials</h1>
-  <div class="testimonial-grid">
+ <div id="Testimonials" class="container">
+  <h1 class="text-center">Testimonials</h1>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
     <div
-      class="card"
+      class="col mb-4"
       v-for="testimonial in testimonials"
-      style="width: 20rem"
       :key="testimonial.id"
     >
-      <div class="card-body">
-        <div class="container text-center">
-          <div class="row align-items-start">
-            <div class="col">
-              <img
-                :src="testimonial.photo"
-                class="img-fluid"
-                :alt="testimonial.name"
-                style="height: 100px; border-radius: 50%"
-              />
-            </div>
-            <div class="col">
-              <h5 class="card-title">{{ testimonial.name }}</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">
-                {{ testimonial.description }}
-              </h6>
-            </div>
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column align-items-center">
+          <div class="text-center mb-4 d-flex">
+            <img
+              :src="testimonial.photo"
+              class="img-fluid rounded-circle"
+              :alt="testimonial.name"
+              style="max-height: 100px"
+            />
+            <div class="class">
+            <h5 class="card-title text-center">{{ testimonial.name }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-center">
+              {{ testimonial.description }}
+            </h6>
           </div>
+          </div>
+         
+          <p class="card-text text-center"><i class="bi bi-quote"></i>{{ testimonial.paragraph }}</p>
         </div>
-        <p class="card-text"><i class="bi bi-quote"></i>{{ testimonial.paragraph }}</p>
       </div>
     </div>
   </div>
 </div>
+
+  
 </template>
 
 <script>
