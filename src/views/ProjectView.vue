@@ -37,14 +37,14 @@
   }
   .card{
     background-color:#E7DED9;
-      padding: 50px;
+      padding: 5git 0px;
       transition: transform .2s; /* Animation */
       margin: 0 auto;
     
     
   }
   .card:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1); 
   }
   </style>
   

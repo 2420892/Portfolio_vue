@@ -36,7 +36,8 @@
 }
 
 #profile img {
-  width: 300px;
+  object-fit: cover;
+  width: 200px;
   height: 200px;
   border-radius: 50%;
   transform: translateY(-70px);

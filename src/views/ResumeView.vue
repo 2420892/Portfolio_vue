@@ -1,6 +1,7 @@
 <template>
+  <div id="resume">
     <div class="skills-container">
-        <h1>This is an skills page</h1>
+        <h1> I have developed a diverse set of skills across the following  domains</h1>
         <div class="card-container">
           <div class="card" v-for="skill in skills" :key="skill.id" style="width: 20rem;">
             <div class="card-body">
@@ -15,7 +16,6 @@
                 <i :class="skill.icons"></i>
               </template>
               <p class="card-text">{{ skill.para }}</p>
-              <a :href="skill.certificate" class="card-link">View certificate</a>
             </div>
           </div>
         </div>  
@@ -23,6 +23,7 @@
     <div class="timeline">
       <div class="row">
         <div class="col-sm-6 mb-3 mb-sm-0">
+          <h3>Education</h3>
           <div class="card">
             <div class="card-body" v-for="Edu in Education" :key="Edu.id">
               <h5 class="card-title">{{Edu.institute }}</h5>
@@ -32,6 +33,7 @@
           </div>
         </div>
         <div class="col-sm-6">
+          <h3>Work Experience</h3>
           <div class="card">
             <div class="card-body" v-for="wrk in work" :key="wrk.id">
               <h5 class="card-title">{{wrk.institute }}</h5>
@@ -42,7 +44,7 @@
         </div>
       </div>
     </div>
-   
+  </div>
            
     
           
@@ -75,15 +77,21 @@
 </script>
 
 <style scoped>
+#resume{
+  background-color:#988780;
+}
 .card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .card {
-  margin: 10px
+  margin: 10px;
+  background-color:#E7DED9;
 }
-
+h3{
+  color:white;
+}
 
 .timeline{
 margin-top:2px;
