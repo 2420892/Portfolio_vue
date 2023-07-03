@@ -20,7 +20,7 @@
               <router-link to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" >About</router-link>
+              <router-link to="/about">About</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/resume">Resume</router-link>
@@ -31,6 +31,9 @@
             </li>
             <li class="nav-item">
               <router-link to="/testimonial">Tesimonials</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/contact">Contact</router-link>
             </li>
           </ul>
         </div>

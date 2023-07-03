@@ -7,8 +7,8 @@
           <img :src="project.image" class="card-img-top img-fluid"  :alt="project.name" style="height:200px; width:18rem">
           <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
-            <a :href="project.github" class="card-link">View Code</a>
-            <a :href="project.netlify" class="card-link">Go Live</a>
+            <a :href="project.github" target="blank" class="card-link">View Code</a>
+            <a :href="project.netlify" target="blank" class="card-link">Go Live</a>
           </div>
         </div>
       </div>
@@ -32,8 +32,11 @@
   }
   </script>
   <style scoped>
+  .container{
+    background-color:#988780;
+  }
   .card{
-    background-image: url();
+    background-color:#E7DED9;
       padding: 50px;
       transition: transform .2s; /* Animation */
       margin: 0 auto;

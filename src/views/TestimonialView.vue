@@ -48,9 +48,11 @@ export default {
 </script>
 
 <style scoped>
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns per row */
   gap: 20px; /* Adjust the gap between cards as needed */
+
 }
 </style>
