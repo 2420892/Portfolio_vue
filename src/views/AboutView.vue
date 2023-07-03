@@ -34,10 +34,18 @@
 }
 .text{
   width: 35rem;
-  border:2px solid black;
+  border:1px solid #13292a;
   padding: 8px;
-  box-shadow: 8px 16px 0px black;
+  box-shadow: 8px 16px 0px #13292a;
   border-radius:12px;
+}
+.text a{
+  border:1px solid black;
+background-color:#988780;;
+color:#13292a;
+text-decoration: none;
+padding:8px;
+border-radius: 12px;
 }
 
 
