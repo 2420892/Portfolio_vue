@@ -37,6 +37,7 @@
 .right{
   animation:backInRight; 
   animation-duration: 2s; 
+  
 }
 #home img {
   width: 100%;
