@@ -1,7 +1,7 @@
 <template>
   <div id="resume">
     <div class="skills-container">
-        <h1> I have developed a diverse set of skills across the following  domains</h1>
+        <h1> Skills</h1>
         <div class="card-container">
           <div class="card" v-for="skill in skills" :key="skill.id" style="width: 20rem;">
             <div class="card-body">
@@ -21,24 +21,27 @@
         </div>  
     </div>
     <div class="timeline">
-      <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="row" >
+        <h1>Education and Work Experience</h1>
+        <div class="col sm-6">
           <h3>Education</h3>
           <div class="card">
             <div class="card-body" v-for="Edu in Education" :key="Edu.id">
               <h5 class="card-title">{{Edu.institute }}</h5>
+              <p>{{Edu.year }}</p>
               <p class="card-text">{{Edu.descr }}</p>
-              <a href="#" class="btn btn-primary">{{Edu.year }}</a>
+             
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col sm-6">
           <h3>Work Experience</h3>
           <div class="card">
             <div class="card-body" v-for="wrk in work" :key="wrk.id">
               <h5 class="card-title">{{wrk.institute }}</h5>
+              <p>{{wrk.year }}</p>
               <p class="card-text">{{wrk.descr }}</p>
-              <a href="#" class="btn btn-primary">{{wrk.year }}</a>
+             
             </div>
           </div>
         </div>
@@ -77,9 +80,8 @@
 </script>
 
 <style scoped>
-#resume{
-  background-color:#988780;
-}
+
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -87,14 +89,28 @@
 }
 .card {
   margin: 10px;
-  background-color:#E7DED9;
+ background-color:rgba(222,227,229,255);
+ font-size:18px;
+ border:1px solid black;
 }
-h3{
-  color:white;
+h5{
+  font-size:22px;
 }
 
-.timeline{
-margin-top:2px;
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto; 
+ 
+}
+
+.col .card-body {
+  border-bottom: 2px dotted black;
 }
 
 

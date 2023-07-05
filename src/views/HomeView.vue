@@ -3,19 +3,19 @@
     <img
       class="img img-fluid"
       src="https://i.postimg.cc/FzK60sm4/Office-Design-Tips.jpg"
-      alt=""
+      alt="firstimg"
     />
     <div class="container text-center">
       <div class="row align-items-start">
         <div class="col-md-6" id="text">
-          <h1>Hello, I'm Siyamanga</h1>
-          <h3>An aspiring <span>full stack developer</span></h3>
-          <a href="#">Connect with me</a>
+          <h1 class="animate">Hello, I'm Siyamanga</h1>
+          <h3  class="right">An aspiring <span >full stack developer</span></h3>
+          <a href="/contact">Connect with me</a>
         </div>
         <div class="col-md-6 mt-4 mt-md-0" id="profile">
           <img
             class="img-fluid"
-            src="https://i.postimg.cc/mgYypRZd/Whats-App-Image-2023-07-01-at-20-02-10-removebg-preview-1.png"
+            src="https://i.postimg.cc/tJ032gG6/profileee-removebg-preview.png"
             alt=""
           />
         </div>
@@ -27,8 +27,16 @@
 <script></script>
 
 <style scoped>
-#home {
-  background-color: #e7ded9;
+#home{
+  background-color: rgba(222,227,229,255);
+}
+.animate{
+  animation: backInLeft; 
+  animation-duration: 2s; 
+}
+.right{
+  animation:backInRight; 
+  animation-duration: 2s; 
 }
 #home img {
   width: 100%;
@@ -40,12 +48,13 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border:3px solid black;
   transform: translateY(-70px);
 }
 
 #text {
   font-weight: bold;
-  color: #13292a;
+  color: black;
 }
 
 #text h1 {
@@ -54,10 +63,10 @@
 
 #text a {
   text-decoration: none;
-  border: 2px solid#988780;
+  border: 2px solid#999fa0;
   padding: 8px;
-  background-color: #988780;
-  color: white;
+  background-color: #999fa0;
+  color: black;
 }
 
 p {

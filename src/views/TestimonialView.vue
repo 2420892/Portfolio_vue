@@ -14,7 +14,7 @@
               :src="testimonial.photo"
               class="img-fluid rounded-circle"
               :alt="testimonial.name"
-              style="max-height: 100px"
+              style="max-height: 100px;border:3px solid rgba(222,227,229,255)"
             />
             <div class="class">
             <h5 class="card-title text-center">{{ testimonial.name }}</h5>
@@ -51,8 +51,14 @@ export default {
 
 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns per row */
-  gap: 20px; /* Adjust the gap between cards as needed */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
 
+}
+i{
+  color:black;
+}
+.card{
+  background-color: rgba(222,227,229,255);
 }
 </style>
