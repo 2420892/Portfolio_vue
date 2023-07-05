@@ -32,14 +32,11 @@
   }
   </script>
   <style scoped>
-  .container{
-    background-color:#988780;
-  }
+  
   .card{
-    background-color:#E7DED9;
-      padding: 5git 0px;
+    background-color:rgba(222,227,229,255);
       transition: transform .2s; /* Animation */
-      margin: 0 auto;
+    
     
     
   }

@@ -38,6 +38,7 @@
   padding: 8px;
   box-shadow: 8px 16px 0px #13292a;
   border-radius:12px;
+  font-size: 25px;
 }
 .text a{
   border:1px solid black;
