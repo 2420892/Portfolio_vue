@@ -48,4 +48,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+i{
+  animation:flipInY;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+</style>

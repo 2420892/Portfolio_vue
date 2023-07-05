@@ -34,6 +34,9 @@
     .is-invalid::placeholder {
       color: red!important;
     }
+    button{
+        margin:auto; 
+    }
   </style>
   
   <script>
