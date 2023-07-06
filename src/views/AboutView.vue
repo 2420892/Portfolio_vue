@@ -13,7 +13,7 @@
           Call me : +27 63 485 4531 OR <br>
           email : zwenisiyamanga@gmail.com
         </p>
-        <a href="https://docs.google.com/document/d/1XLnjZpM4oPXYxstX2VB3hExUnOX-k8qs951Vt5y0Ovc/edit" target="blank">Download CV</a>
+       
       </div>
     </div>
 </template>
@@ -40,14 +40,12 @@
   border-radius:12px;
   font-size: 25px;
 }
-.text a{
-  border:1px solid black;
-background-color:#988780;;
-color:#13292a;
-text-decoration: none;
-padding:8px;
-border-radius: 12px;
+
+
+@media (width < 570px){
+ .text{
+ font-size:inherit;
+ margin-top:0px;
+ }
 }
-
-
 </style>
