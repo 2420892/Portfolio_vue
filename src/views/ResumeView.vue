@@ -20,35 +20,36 @@
           </div>
         </div>  
     </div>
+
     <div class="timeline">
-      <div class="row" >
+      <div class="row">
         <h1>Education and Work Experience</h1>
         <div class="col sm-6">
           <h3>Education</h3>
           <div class="card">
             <div class="card-body" v-for="Edu in Education" :key="Edu.id">
-              <h5 class="card-title">{{Edu.institute }}</h5>
-              <p>{{Edu.year }}</p>
-              <p class="card-text">{{Edu.descr }}</p>
-             
+              <h5 class="card-title">{{Edu.institute}}</h5>
+              <p>{{Edu.year}}</p>
+              <p class="card-text">{{Edu.descr}}</p>
             </div>
           </div>
         </div>
         <div class="col sm-6">
           <h3>Work Experience</h3>
           <div class="card">
-            <div class="card-body" v-for="wrk in work" :key="wrk.id">
-              <h5 class="card-title">{{wrk.institute }}</h5>
-              <p>{{wrk.year }}</p>
-              <p class="card-text">{{wrk.descr }}</p>
-             
+            <div class="card-body work-card" v-for="wrk in work" :key="wrk.id">
+              <h5 class="card-title">{{wrk.institute}}</h5>
+              <p>{{wrk.year}}</p>
+              <p class="card-text">{{wrk.descr}}</p>
             </div>
           </div>
         </div>
+        <div class="btn d-flex">
+          <a href="https://docs.google.com/document/d/1XLnjZpM4oPXYxstX2VB3hExUnOX-k8qs951Vt5y0Ovc/edit" target="blank">Download CV</a>
       </div>
+        </div>
     </div>
   </div>
-           
     
           
  
@@ -96,8 +97,6 @@
 h5{
   font-size:22px;
 }
-
-
 .timeline-container {
   display: flex;
   justify-content: center;
@@ -105,12 +104,37 @@ h5{
 
 .timeline {
   max-width: 800px;
-  margin: 0 auto; 
- 
+  margin: 0 auto;
+  display: flex;
+}
+
+.col {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.col .card {
+  flex: 1;
 }
 
 .col .card-body {
   border-bottom: 2px dotted black;
+}
+
+.card-body:last-child {
+  border-bottom: none;
+}
+ a{
+  flex: 1;
+   border:1px solid black;
+  background-color: #e7ded9!important;
+  box-shadow: 5px 10px 0px black;
+color:black;
+text-decoration: none;
+padding:8px;
+border-radius: 12px;
+margin-bottom: 12px;
 }
 
 

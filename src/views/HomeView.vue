@@ -10,7 +10,7 @@
         <div class="col-md-6" id="text">
           <h1 class="animate">Hello, I'm Siyamanga</h1>
           <h3  class="right">An aspiring <span >full stack developer</span></h3>
-          <a href="/contact">Connect with me</a>
+          <a href="/about">More about me</a>
         </div>
         <div class="col-md-6 mt-4 mt-md-0" id="profile">
           <img
@@ -28,6 +28,7 @@
 
 <style scoped>
 #home{
+  margin: 0;
   background-color: rgba(222,227,229,255);
 }
 .animate{
@@ -41,7 +42,9 @@
 }
 #home img {
   width: 100%;
-  height: 30%;
+  height: 40%;
+  object-fit: center;
+  object-position: center;
 }
 
 #profile img {
@@ -61,16 +64,45 @@
 #text h1 {
   font-size: 60px;
 }
+#text h3 {
+  font-size: 40px;
+}
 
 #text a {
   text-decoration: none;
   border: 2px solid#999fa0;
   padding: 8px;
-  background-color: #999fa0;
+  background-color: #e7ded9;
   color: black;
+  border-radius: 12px;
+  box-shadow: 5px 10px 0px black;
 }
 
 p {
   font-size: 20px;
+}
+@media(width < 770px){
+  #home img {
+    width: 100%;
+    height: 30%;
+    object-fit: center;
+    object-position: center;
+  }
+  #home{
+    margin: 0;
+    background-color: rgba(222,227,229,255);
+
+  }
+  #profile img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border:3px solid black;
+    transform: translateY(-70px);
+  }
+ #profile img{
+  transform: translateY(3px)
+ }
 }
 </style>

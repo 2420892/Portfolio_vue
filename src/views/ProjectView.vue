@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <h1>This is a products page</h1>
+    <h1>View My projects</h1>
     <div class="row">
       <div class="col-md-4 mb-4" v-for="project in projects" :key="project.id">
-        <div class="card">
+        <div class="card" style="width:18rem">
           <img :src="project.image" class="card-img-top img-fluid"  :alt="project.name" style="height:200px; width:18rem">
           <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
@@ -35,13 +35,19 @@
   
   .card{
     background-color:rgba(222,227,229,255);
-      transition: transform .2s; /* Animation */
-    
-    
-    
+    transition: transform .2s; 
   }
   .card:hover {
     transform: scale(1.1); 
+  }
+@media (width<800px){
+.card{
+width:auto!important;
+}
+.card img{
+  width:auto!important;
+  object-fit: cover;
+}
   }
   </style>
   

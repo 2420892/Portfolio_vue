@@ -14,7 +14,7 @@
               :src="testimonial.photo"
               class="img-fluid rounded-circle"
               :alt="testimonial.name"
-              style="max-height: 100px;border:3px solid rgba(222,227,229,255)"
+              style="height: 100px;width:100px; border:3px solid rgba(222,227,229,255);object-fit:centre;"
             />
             <div class="class">
             <h5 class="card-title text-center">{{ testimonial.name }}</h5>
