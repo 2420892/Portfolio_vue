@@ -1,23 +1,15 @@
 <template>
   <div id="home">
-    <img
-      class="img img-fluid"
-      src="https://i.postimg.cc/FzK60sm4/Office-Design-Tips.jpg"
-      alt="firstimg"
-    />
+    <img class="img img-fluid" src="https://i.postimg.cc/FzK60sm4/Office-Design-Tips.jpg" alt="firstimg" />
     <div class="container text-center">
       <div class="row align-items-start">
         <div class="col-md-6" id="text">
           <h1 class="animate">Hello, I'm Siyamanga</h1>
-          <h3  class="right">An aspiring <span >full stack developer</span></h3>
+          <h3 class="right">An aspiring <span>full stack developer</span></h3>
           <a href="/about">More about me</a>
         </div>
         <div class="col-md-6 mt-4 mt-md-0" id="profile">
-          <img
-            class="img-fluid"
-            src="https://i.postimg.cc/tJ032gG6/profileee-removebg-preview.png"
-            alt=""
-          />
+          <img class="img-fluid" src="https://i.postimg.cc/tJ032gG6/profileee-removebg-preview.png" alt="" />
         </div>
       </div>
     </div>
@@ -27,19 +19,22 @@
 <script></script>
 
 <style scoped>
-#home{
+#home {
   margin: 0;
-  background-color: rgba(222,227,229,255);
+  background-color: rgba(222, 227, 229, 255);
 }
-.animate{
-  animation: backInLeft; 
-  animation-duration: 2s; 
+
+.animate {
+  animation: backInLeft;
+  animation-duration: 2s;
 }
-.right{
-  animation:backInRight; 
-  animation-duration: 2s; 
-  
+
+.right {
+  animation: backInRight;
+  animation-duration: 2s;
+
 }
+
 #home img {
   width: 100%;
   height: 40%;
@@ -52,7 +47,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border:3px solid black;
+  border: 3px solid black;
   transform: translateY(-70px);
 }
 
@@ -64,6 +59,7 @@
 #text h1 {
   font-size: 60px;
 }
+
 #text h3 {
   font-size: 40px;
 }
@@ -81,28 +77,32 @@
 p {
   font-size: 20px;
 }
-@media(width < 770px){
+
+@media(width < 770px) {
   #home img {
     width: 100%;
     height: 30%;
     object-fit: center;
     object-position: center;
   }
-  #home{
+
+  #home {
     margin: 0;
-    background-color: rgba(222,227,229,255);
+    background-color: rgba(222, 227, 229, 255);
 
   }
+
   #profile img {
     object-fit: cover;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border:3px solid black;
+    border: 3px solid black;
     transform: translateY(-70px);
   }
- #profile img{
-  transform: translateY(3px)
- }
+
+  #profile img {
+    transform: translateY(3px)
+  }
 }
 </style>
