@@ -53,6 +53,10 @@ width:auto!important;
   width:auto!important;
   object-fit: cover;
 }
+.margin{
+  margin-top: 40px;
+  padding-left: 0;
+}
   }
   </style>
   

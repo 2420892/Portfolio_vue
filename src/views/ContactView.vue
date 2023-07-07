@@ -156,4 +156,12 @@ button {
   margin: 0 0.5rem;
   color: #000;
   transition: color 0.3s ease;
-}</style>
+}
+@media(width<770px){
+  .container{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+  }
+}
+</style>
