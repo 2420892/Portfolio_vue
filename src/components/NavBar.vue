@@ -30,7 +30,7 @@
               <router-link to="/project"><i class="bi bi-motherboard-fill"></i>Projects</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/testimonial"><i class="bi bi-people-fill"></i>Tesimonials</router-link>
+              <router-link to="/testimonial"><i class="bi bi-people-fill"></i>Testimonials</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/contact"><i class="bi bi-person-lines-fill"></i>Contact</router-link>

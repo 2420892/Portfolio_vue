@@ -1,12 +1,12 @@
 <template>
+<div class="margin">
   <div id="Testimonials" class="container">
-    <h1 class="text-center">Testimonials</h1>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
       <div class="col mb-4" v-for="testimonial in testimonials" :key="testimonial.id">
         <div class="card h-100">
           <div class="card-body d-flex flex-column align-items-center">
             <div class="text-center mb-4 d-flex">
-              <img :src="testimonial.photo" class="img-fluid rounded-circle" :alt="testimonial.name"
+              <img :src="testimonial.photo"  class="img-fluid rounded-circle" loading="lazy" :alt="testimonial.name"
                 style="height: 100px;width:100px; border:3px solid rgba(222,227,229,255);object-fit:centre;" />
               <div class="class">
                 <h5 class="card-title text-center">{{ testimonial.name }}</h5>
@@ -22,6 +22,7 @@
       </div>
     </div>
   </div>
+</div>  
 </template>
 
 <script>
@@ -38,6 +39,10 @@ export default {
 </script>
 
 <style scoped>
+.margin{
+  margin-top: 40px;
+}
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
