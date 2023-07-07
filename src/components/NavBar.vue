@@ -3,15 +3,8 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">S.Zweni</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,7 +18,7 @@
             <li class="nav-item">
               <router-link to="/resume"><i class="bi bi-mortarboard-fill"></i>Resume</router-link>
             </li>
-          
+
             <li class="nav-item">
               <router-link to="/project"><i class="bi bi-motherboard-fill"></i>Projects</router-link>
             </li>
@@ -49,8 +42,8 @@ export default {
 </script>
 
 <style scoped>
-i{
-  animation:flipInY;
+i {
+  animation: flipInY;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }

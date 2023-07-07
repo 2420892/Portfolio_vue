@@ -57,11 +57,11 @@
 }
 
 #text h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 #text h3 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #text a {
