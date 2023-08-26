@@ -9,7 +9,7 @@
           <a href="/about">More about me</a>
         </div>
         <div class="col-md-6 mt-4 mt-md-0" id="profile">
-          <img class="img-fluid" src="https://i.postimg.cc/tJ032gG6/profileee-removebg-preview.png" alt="" loading="lazy"/>
+          <img class="https://i.postimg.cc/3x4p9VWw/Whats-App-Image-2023-07-01-at-20-02-10-removebg-preview-1.png" alt="" loading="lazy"/>
         </div>
       </div>
     </div>
