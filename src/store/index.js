@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-const arrUrl = "https://2420892.github.io/EOMP_Vue_json/Data/";
+const arrUrl = "https://siyamanga-zw.github.io/port_json/data/";
 export default createStore({
   state: {
     skills: null,
