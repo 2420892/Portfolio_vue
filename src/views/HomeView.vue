@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <img class="img img-fluid" src="https://i.postimg.cc/FzK60sm4/Office-Design-Tips.jpg" alt="firstimg" />
+    <img class="img img-fluid" src="https://i.ibb.co/9N4s8Y4/1697465607897-e-1710979200-v-beta-t-Ue-BD3dg453n-X191-Gy-OSi-QR3n29-TWim-UMBj3-Oxk-Gf-A74.jpg" alt="firstimg" />
     <div class="container text-center">
       <div class="row align-items-start">
         <div class="col-md-6" id="text">
@@ -9,7 +9,7 @@
           <a href="/about">More about me</a>
         </div>
         <div class="col-md-6 mt-4 mt-md-0" id="profile">
-          <img class="https://i.postimg.cc/3x4p9VWw/Whats-App-Image-2023-07-01-at-20-02-10-removebg-preview-1.png" alt="" loading="lazy"/>
+          <img class="https://i.ibb.co/JQmZfbj/Whats-App-Image-2023-09-26-at-15-04-23-removebg-preview.png" alt="" loading="lazy"/>
         </div>
       </div>
     </div>
